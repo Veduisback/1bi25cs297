@@ -1,16 +1,16 @@
-root@web3-VirtualBox:~/shriram# rm ~/.ssh/id_ed25519.pub
-root@web3-VirtualBox:~/shriram# rm ~/.ssh/id_ed25519.pub
+  rm ~/.ssh/id_ed25519.pub
+  rm ~/.ssh/id_ed25519.pub
 rm: cannot remove '/root/.ssh/id_ed25519.pub': No such file or directory
-root@web3-VirtualBox:~/shriram# ssh -keygen -t ed25519 -C"shrirameddy700@"^C
-root@web3-VirtualBox:~/shriram# tree
+  ssh -keygen -t ed25519 -C"shrirameddy700@"^C
+  tree
 .
 └── key.txt
 
 0 directories, 1 file
-root@web3-VirtualBox:~/shriram# git init^C
-root@web3-VirtualBox:~/shriram# ssh -keygen -t ed25519 -C "nowto"
+  git init^C
+  ssh -keygen -t ed25519 -C "nowto"
 Bad escape character 'ygen'.
-root@web3-VirtualBox:~/shriram# ssh-keygen -t ed25519 -C "nowto"
+  ssh-keygen -t ed25519 -C "nowto"
 Generating public/private ed25519 key pair.
 Enter file in which to save the key (/root/.ssh/id_ed25519): key.txt
 key.txt already exists.
@@ -33,23 +33,23 @@ The key's randomart image is:
 |       . o . . ..|
 |        .     . +|
 +----[SHA256]-----+
-root@web3-VirtualBox:~/shriram# cat ~/.ssh/id_ed23319.pub
+  cat ~/.ssh/id_ed23319.pub
 cat: /root/.ssh/id_ed23319.pub: No such file or directory
-root@web3-VirtualBox:~/shriram# cat ~/.ssh/id_ed25519.pub
+  cat ~/.ssh/id_ed25519.pub
 cat: /root/.ssh/id_ed25519.pub: No such file or directory
-root@web3-VirtualBox:~/shriram# gedit key.txt
+  gedit key.txt
 
 (gedit:3223): Tepl-WARNING **: 11:53:16.388: GVfs metadata is not supported. Fallback to TeplMetadataManager. Either GVfs is not correctly installed or GVfs metadata are not supported on this platform. In the latter case, you should configure Tepl with --disable-gvfs-metadata.
-root@web3-VirtualBox:~/shriram# mkdir -p ~/.ssh
-root@web3-VirtualBox:~/shriram# mv key.txt ~/.ssh/id_ed25519
-root@web3-VirtualBox:~/shriram# mv key.txt.pub ~/.ssh/id_ed25519.pub
-root@web3-VirtualBox:~/shriram# cat ~/.ssh/id_ed25519.pub
+  mkdir -p ~/.ssh
+  mv key.txt ~/.ssh/id_ed25519
+  mv key.txt.pub ~/.ssh/id_ed25519.pub
+  cat ~/.ssh/id_ed25519.pub
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILtcWTbH7fHOKDF16kCYqW9eYbrtCMNZ0/bLaqzFnIzk nowto
-root@web3-VirtualBox:~/shriram# ssh -T git@github.com
+  ssh -T git@github.com
 ssh: connect to host github.com port 22: Connection timed out
-root@web3-VirtualBox:~/shriram# ssh -T git@github.com
+  ssh -T git@github.com
 
 ssh: connect to host github.com port 22: Connection timed out
-root@web3-VirtualBox:~/shriram# 
-root@web3-VirtualBox:~/shriram# 
+  
+  
 
