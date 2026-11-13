@@ -1,0 +1,13 @@
+  rm ~/.ssh/id_ed25519.pub
+  rm ~/.ssh/id_ed25519.pub
+
+
+  ssh-keygen -t ed25519 -C "veduisback"
+
+
+  mkdir -p ~/.ssh
+  mv key.txt ~/.ssh/id_ed25519
+  mv key.txt.pub ~/.ssh/id_ed25519.pub
+  cat ~/.ssh/id_ed25519.pub
+
+  ssh -T git@github.com
